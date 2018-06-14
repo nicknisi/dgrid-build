@@ -9,6 +9,7 @@ var profile = {
     stripConsole: 'none',
     layers: {
         'dgrid-built': {
+            includeLocales: ['en-us'],
             include: ['dgrid-build/index'],
             boot: false,
             customBase: true
@@ -19,7 +20,7 @@ var profile = {
     packages: [
         { name: 'dgrid-build', location: 'src', main: 'index.js' },
         { name: 'dojo', location: 'dojo' },
-        { name: 'dgrid', location: 'dgrid' }
-        // { name: 'dijit', location: 'dijit' }
+        { name: 'dgrid', location: 'dgrid' },
+        { name: 'dijit', location: 'dijit' }
     ]
 };
